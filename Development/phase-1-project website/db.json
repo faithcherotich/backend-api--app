@@ -1,0 +1,423 @@
+{
+  "Products": [
+    {
+      "id": "7a45",
+      "productImage": "./images/tcb for hair.jpeg",
+      "productName": "tcb relaxer",
+      "productPrice": "250 ksh",
+      "productDescription": "Relaxing hair"
+    },
+    {
+      "id": "bed9",
+      "productImage": "./images/face-lightenind cream.jpg",
+      "productName": "Brightening Cream",
+      "productPrice": "1600 Ksh",
+      "productDescription": "Lighten up plus Active Skin."
+    },
+    {
+      "id": "35d5",
+      "productImage": "./images/tcb for hair.jpeg",
+      "productName": "tcb relaxer",
+      "productPrice": "250 ksh",
+      "productDescription": "Relaxing hair"
+    },
+    {
+      "id": "2c3e",
+      "productImage": "./images/tcb for hair.jpeg",
+      "productName": "tcb relaxer",
+      "productPrice": "250 ksh",
+      "productDescription": "Relaxing hair"
+    },
+    {
+      "id": "e481",
+      "productImage": "./images/nails.jpg",
+      "productName": "Nail polish",
+      "productPrice": "100 Ksh",
+      "productDescription": "New nails, new you."
+    },
+    {
+      "id": "0f3e",
+      "productImage": "./images/nails.jpg",
+      "productName": "Nail polish",
+      "productPrice": "100 Ksh",
+      "productDescription": "New nails, new you."
+    },
+    {
+      "id": "c431",
+      "productImage": "./images/nails.jpg",
+      "productName": "Nail polish",
+      "productPrice": "100 Ksh",
+      "productDescription": "New nails, new you."
+    },
+    {
+      "id": "5ed5",
+      "productImage": "./images/nails.jpg",
+      "productName": "Nail polish",
+      "productPrice": "100 Ksh",
+      "productDescription": "New nails, new you."
+    },
+    {
+      "id": "c586",
+      "productImage": "./images/nails.jpg",
+      "productName": "Nail polish",
+      "productPrice": "100 Ksh",
+      "productDescription": "New nails, new you."
+    },
+    {
+      "id": "0c3b",
+      "productImage": "./images/nails.jpg",
+      "productName": "Nail polish",
+      "productPrice": "150 Ksh",
+      "productDescription": "New nails, new you."
+    },
+    {
+      "id": "5d55",
+      "productImage": "./images/nails.jpg",
+      "productName": "Nail polish",
+      "productPrice": "150 Ksh",
+      "productDescription": "New nails, new you."
+    },
+    {
+      "id": "245c",
+      "productImage": "./images/nails.jpg",
+      "productName": "Nail polish",
+      "productPrice": "150 Ksh",
+      "productDescription": "New nails, new you."
+    },
+    {
+      "id": "5261",
+      "productImage": "./images/nails.jpg",
+      "productName": "Nail polish",
+      "productPrice": "150 Ksh",
+      "productDescription": "New nails, new you."
+    },
+    {
+      "id": "1666",
+      "productImage": "./images/nails.jpg",
+      "productName": "Nail polish",
+      "productPrice": "150 Ksh",
+      "productDescription": "New nails, new you."
+    },
+    {
+      "id": "457f",
+      "productImage": "./images/nails.jpg",
+      "productName": "Nail polish",
+      "productPrice": "150 Ksh",
+      "productDescription": "New nails, new you."
+    },
+    {
+      "id": "d444",
+      "productImage": "./images/nails.jpg",
+      "productName": "Nail polish",
+      "productPrice": "150 Ksh",
+      "productDescription": "New nails, new you."
+    },
+    {
+      "id": "b9c5",
+      "productImage": "./images/nails.jpg",
+      "productName": "Nail polish",
+      "productPrice": "150 Ksh",
+      "productDescription": "New nails, new you."
+    },
+    {
+      "id": "947a",
+      "productImage": "./images/nails.jpg",
+      "productName": "Nail polish",
+      "productPrice": "150 Ksh",
+      "productDescription": "New nails, new you."
+    },
+    {
+      "id": "036b",
+      "productImage": "./images/nails.jpg",
+      "productName": "Nail polish",
+      "productPrice": "150 Ksh",
+      "productDescription": "New nails, new you."
+    },
+    {
+      "id": "638f",
+      "productImage": "./images/nails.jpg",
+      "productName": "Nail polish",
+      "productPrice": "150 Ksh",
+      "productDescription": "New nails, new you."
+    },
+    {
+      "id": "fd2e",
+      "productImage": "./images/nails.jpg",
+      "productName": "Nail polish",
+      "productPrice": "150 Ksh",
+      "productDescription": "New nails, new you."
+    },
+    {
+      "id": "10e9",
+      "productImage": "./images/nails.jpg",
+      "productName": "Nail polish",
+      "productPrice": "150 Ksh",
+      "productDescription": "New nails, new you."
+    },
+    {
+      "id": "a577",
+      "productImage": "./images/nails.jpg",
+      "productName": "Nail polish",
+      "productPrice": "150 Ksh",
+      "productDescription": "New nails, new you."
+    },
+    {
+      "id": "b760",
+      "productImage": "./images/nails.jpg",
+      "productName": "Nail polish",
+      "productPrice": "150 Ksh",
+      "productDescription": "New nails, new you."
+    },
+    {
+      "id": "b6a7",
+      "productImage": "./images/nails.jpg",
+      "productName": "Nail polish",
+      "productPrice": "150 Ksh",
+      "productDescription": "New nails, new you."
+    },
+    {
+      "id": "d6bd",
+      "productImage": "./images/nails.jpg",
+      "productName": "Nail polish",
+      "productPrice": "150 Ksh",
+      "productDescription": "New nails, new you."
+    },
+    {
+      "id": "c18a",
+      "productImage": "./images/nails.jpg",
+      "productName": "Nail polish",
+      "productPrice": "150 Ksh",
+      "productDescription": "New nails, new you."
+    },
+    {
+      "id": "8561",
+      "productImage": "./images/nails.jpg",
+      "productName": "Nail polish",
+      "productPrice": "150 Ksh",
+      "productDescription": "New nails, new you."
+    },
+    {
+      "id": "d0eb",
+      "productImage": "./images/Makari Multi cream.jpg.webp",
+      "productName": "Makari Cream",
+      "productPrice": "1400 Ksh",
+      "productDescription": "Makari multi-action lightening cream is a hydrating SPF moisturizer that replenishes dry skin with a skin-silkening blend of botanicals that softens."
+    },
+    {
+      "id": "70f6",
+      "productImage": "./images/Makari Multi cream.jpg.webp",
+      "productName": "Makari Cream",
+      "productPrice": "1400 Ksh",
+      "productDescription": "Makari multi-action lightening cream is a hydrating SPF moisturizer that replenishes dry skin with a skin-silkening blend of botanicals that softens."
+    },
+    {
+      "id": "a19a",
+      "productImage": "./images/Makari Multi cream.jpg.webp",
+      "productName": "Makari Cream",
+      "productPrice": "1400 Ksh",
+      "productDescription": "Makari multi-action lightening cream is a hydrating SPF moisturizer that replenishes dry skin with a skin-silkening blend of botanicals that softens."
+    },
+    {
+      "id": "904c",
+      "productImage": "./images/Makari Multi cream.jpg.webp",
+      "productName": "Makari Cream",
+      "productPrice": "1400 Ksh",
+      "productDescription": "Makari multi-action lightening cream is a hydrating SPF moisturizer that replenishes dry skin with a skin-silkening blend of botanicals that softens."
+    },
+    {
+      "id": "7016",
+      "productImage": "./images/Makari Multi cream.jpg.webp",
+      "productName": "Makari Cream",
+      "productPrice": "1400 Ksh",
+      "productDescription": "Makari multi-action lightening cream is a hydrating SPF moisturizer that replenishes dry skin with a skin-silkening blend of botanicals that softens."
+    },
+    {
+      "id": "9fad",
+      "productImage": "./images/Makari Multi cream.jpg.webp",
+      "productName": "Makari Cream",
+      "productPrice": "1400 Ksh",
+      "productDescription": "Makari multi-action lightening cream is a hydrating SPF moisturizer that replenishes dry skin with a skin-silkening blend of botanicals that softens."
+    },
+    {
+      "id": "6ce1",
+      "productImage": "./images/Makari Multi cream.jpg.webp",
+      "productName": "Makari Cream",
+      "productPrice": "1400 Ksh",
+      "productDescription": "Makari multi-action lightening cream is a hydrating SPF moisturizer that replenishes dry skin with a skin-silkening blend of botanicals that softens."
+    },
+    {
+      "id": "682b",
+      "productImage": "./images/Makari Multi cream.jpg.webp",
+      "productName": "Makari Cream",
+      "productPrice": "1400 Ksh",
+      "productDescription": "Makari multi-action lightening cream is a hydrating SPF moisturizer that replenishes dry skin with a skin-silkening blend of botanicals that softens."
+    },
+    {
+      "id": "d4e3",
+      "productImage": "./images/Makari Multi cream.jpg.webp",
+      "productName": "Makari Cream",
+      "productPrice": "1400 Ksh",
+      "productDescription": "Makari multi-action lightening cream is a hydrating SPF moisturizer that replenishes dry skin with a skin-silkening blend of botanicals that softens."
+    },
+    {
+      "id": "7bb0",
+      "productImage": "./images/Makari Multi cream.jpg.webp",
+      "productName": "Makari Cream",
+      "productPrice": "1400 Ksh",
+      "productDescription": "Makari multi-action lightening cream is a hydrating SPF moisturizer that replenishes dry skin with a skin-silkening blend of botanicals that softens."
+    },
+    {
+      "id": "312e",
+      "productImage": "./images/Makari Multi cream.jpg.webp",
+      "productName": "Makari Cream",
+      "productPrice": "1400 Ksh",
+      "productDescription": "Makari multi-action lightening cream is a hydrating SPF moisturizer that replenishes dry skin with a skin-silkening blend of botanicals that softens."
+    },
+    {
+      "id": "bd63",
+      "productImage": "./images/nails.jpg",
+      "productName": "Nail polish",
+      "productPrice": "100 Ksh",
+      "productDescription": "New nails, new you."
+    },
+    {
+      "id": "612e",
+      "productImage": "./images/nails.jpg",
+      "productName": "Nail polish",
+      "productPrice": "100 Ksh",
+      "productDescription": "New nails, new you."
+    },
+    {
+      "id": "e0ca",
+      "productImage": "./images/nails.jpg",
+      "productName": "Nail polish",
+      "productPrice": "100 Ksh",
+      "productDescription": "New nails, new you."
+    },
+    {
+      "id": "4d8a",
+      "productImage": "./images/nails.jpg",
+      "productName": "Nail polish",
+      "productPrice": "100 Ksh",
+      "productDescription": "New nails, new you."
+    },
+    {
+      "id": "0c0a",
+      "productImage": "./images/nails.jpg",
+      "productName": "Nail polish",
+      "productPrice": "100 Ksh",
+      "productDescription": "New nails, new you."
+    },
+    {
+      "id": "92ba",
+      "productImage": "./images/nails.jpg",
+      "productName": "Nail polish",
+      "productPrice": "100 Ksh",
+      "productDescription": "New nails, new you."
+    },
+    {
+      "id": "18ec",
+      "productImage": "./images/nails.jpg",
+      "productName": "Nail polish",
+      "productPrice": "100 Ksh",
+      "productDescription": "New nails, new you."
+    },
+    {
+      "id": "41b4",
+      "productImage": "./images/nails.jpg",
+      "productName": "Nail polish",
+      "productPrice": "100 Ksh",
+      "productDescription": "New nails, new you."
+    },
+    {
+      "id": "f8cc",
+      "productImage": "./images/nails.jpg",
+      "productName": "Nail polish",
+      "productPrice": "100 Ksh",
+      "productDescription": "New nails, new you."
+    },
+    {
+      "id": "ed76",
+      "productImage": "./images/nails.jpg",
+      "productName": "Nail polish",
+      "productPrice": "100 Ksh",
+      "productDescription": "New nails, new you."
+    },
+    {
+      "id": "6a7b",
+      "productImage": "./images/nails.jpg",
+      "productName": "Nail polish",
+      "productPrice": "100 Ksh",
+      "productDescription": "New nails, new you."
+    },
+    {
+      "id": "93e6",
+      "productImage": "./images/nails.jpg",
+      "productName": "Nail polish",
+      "productPrice": "100 Ksh",
+      "productDescription": "New nails, new you."
+    },
+    {
+      "id": "ef10",
+      "productImage": "./images/nails.jpg",
+      "productName": "Nail polish",
+      "productPrice": "100 Ksh",
+      "productDescription": "New nails, new you."
+    },
+    {
+      "id": "21e0",
+      "productImage": "./images/face make-up.jpg",
+      "productName": "Makeup Brushes",
+      "productPrice": "150 Ksh",
+      "productDescription": "Make your makeup spread evenly."
+    },
+    {
+      "id": "6067",
+      "productImage": "./images/face-lightenind cream.jpg",
+      "productName": "Brightening Cream",
+      "productPrice": "1500 Ksh",
+      "productDescription": "Lighten up plus Active Skin."
+    },
+    {
+      "id": "2fec",
+      "productImage": "./images/pedicure.jpg",
+      "productName": "pedicure drill",
+      "productPrice": "2000 ksh",
+      "productDescription": "Remove all dirt"
+    },
+    {
+      "id": "be2c",
+      "productImage": "./images/tcb for hair.jpeg",
+      "productName": "tcb relaxer",
+      "productPrice": "255 ksh",
+      "productDescription": "Relaxing hair"
+    },
+    {
+      "id": "a81a",
+      "productImage": "./images/tcb for hair.jpeg",
+      "productName": "tcb relaxer",
+      "productPrice": "500 ksh",
+      "productDescription": "get"
+    }
+  ],
+  "blog": [
+    {
+      "title": "The Ultimate Guide to Summer Skincare",
+      "content": "Summer is here, and with it comes the need to update our skincare routines to protect and nourish our skin under the sun’s harsh rays. Here are some essential tips to keep your skin glowing and healthy all summer long.",
+      "use": "lip balm to moisturize your lips,user cream on your skin"
+    },
+    {
+      "title": "skin care",
+      "content": "A solid skincare routine is a must in the quest for healthy, youthful skin. But when it comes to sifting through the myriad of different skincare products available today, there’s everything from your run-of-the-mill over-the-counter drugstore products to medical-grade skincare, which stand in a league all of their own.",
+      "use": "Facial cleanser for combinatin skin skin cleanser for oily skin"
+    }
+  ],
+  "userAuthentication": [
+    {
+      "name":"faith cherotich",
+      "email":"faith567@gmail.com",
+      "password":"ready1234"
+
+    }
+  ]
+}
