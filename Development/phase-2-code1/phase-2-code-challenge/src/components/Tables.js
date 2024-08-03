@@ -93,7 +93,7 @@ function Tables() {
       {filteredTransactions.length ? (
         <Tableitem transactions={filteredTransactions} />
       ) : (
-        <p>Loading...</p>
+        <p>Wait...</p>
       )}
     </div>
   );
