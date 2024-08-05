@@ -5,29 +5,26 @@ import Tableitem from './Tableitem';
 
 function Tables() {
   const [transactions, setTransactions] = useState([]); 
-  const [searchTerm, setSearchTerm] = useState(""); 
+  const [newItem, setNewItem] = useState(""); 
   const [newTransaction, setNewTransaction] = useState({
     date: '',
     description: '',
     amount: '',
     category: ''
   });
-
-  useEffect(() => {
+useEffect(() => {
     fetch('http://localhost:3000/transactions')
       .then(response => response.json())
       .then(data => {
         if (Array.isArray(data)) {
           setTransactions(data);
-        
         }
       })
-      
-  },
+       },
   []);
 
   const handleSearch = (event) => {
-    setSearchTerm(event.target.value);
+    setNewItem(event.target.value);
   };
 
   const handleInputChange = (event) => {
@@ -44,7 +41,7 @@ function Tables() {
   };
 
   const filteredTransactions = transactions.filter(transaction =>
-    transaction.description.toLowerCase().includes(searchTerm.toLowerCase())
+    transaction.description.toLowerCase().includes(newItem.toLowerCase())
   );
 
   return (
@@ -52,7 +49,7 @@ function Tables() {
       <input
         type="text"
         placeholder="Search transactions..."
-        value={searchTerm}
+        value={newItem}
         onChange={handleSearch}
       />
       <form onSubmit={handleFormSubmit}>
@@ -93,7 +90,7 @@ function Tables() {
       {filteredTransactions.length ? (
         <Tableitem transactions={filteredTransactions} />
       ) : (
-        <p>Wait...</p>
+        <p>wait...</p>
       )}
     </div>
   );
