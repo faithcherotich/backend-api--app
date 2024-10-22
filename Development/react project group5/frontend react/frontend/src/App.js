@@ -11,6 +11,7 @@ import Footer from './components/Footer';
 import Carousel from './components/Carousel';
 import Notes from './components/Notes';
 import PrivateRoute from './components/PrivateRoute';
+import NotFound from './components/NotFound'; // Ensure this is created
 import './App.css';
 
 const App = () => {
@@ -18,13 +19,13 @@ const App = () => {
 
     return (
         <Router>
-            <Header isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} /> {/* Always show the header */}
+            <Header isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />
             <div className="app-container">
                 <Routes>
-                    <Route path='/' element={<Home />} /> {/* Home route */}
+                    <Route path='/' element={<Home />} />
                     <Route path='/help' element={<Help />} />
                     <Route path='/contact' element={<Contact />} />
-                    <Route path="/signup" element={<Signup setIsLoggedIn={setIsLoggedIn} />} /> {/* Pass setIsLoggedIn */}
+                    <Route path="/signup" element={<Signup setIsLoggedIn={setIsLoggedIn} />} />
                     <Route path="/login" element={<Login setIsLoggedIn={setIsLoggedIn} />} />
                     <Route 
                         path='/dashboard' 
@@ -34,8 +35,9 @@ const App = () => {
                         path='/notes' 
                         element={<PrivateRoute element={<Notes isLoggedIn={isLoggedIn} />} isLoggedIn={isLoggedIn} />} 
                     />
+                    <Route path="*" element={<NotFound />} /> {/* Catch-all for undefined routes */}
                 </Routes>
-                <Carousel /> {/* Always display the carousel */}
+                <Carousel />
             </div>
             <Footer />
         </Router>

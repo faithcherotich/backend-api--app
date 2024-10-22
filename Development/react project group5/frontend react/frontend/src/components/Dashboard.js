@@ -7,6 +7,7 @@ const Dashboard = ({ setIsLoggedIn }) => {
     const [title, setTitle] = useState('');
     const [content, setContent] = useState('');
     const [tags, setTags] = useState('');
+    const [errorMessages, setErrorMessages] = useState([]);
 
     const handleLogout = () => {
         localStorage.removeItem('userId');
@@ -53,7 +54,16 @@ const Dashboard = ({ setIsLoggedIn }) => {
 
             if (!response.ok) {
                 const errorData = await response.json();
-                throw new Error(errorData.message || 'Failed to add note. Please try again.');
+                // Clear previous error messages
+                setErrorMessages([]);
+                if (errorData.errors) {
+                    setErrorMessages(Object.entries(errorData.errors).map(([word, suggestions]) => 
+                        `Spelling mistakes found for "${word}": ${Array.from(suggestions).join(', ')}`
+                    ));
+                } else {
+                    throw new Error(errorData.message || 'Failed to add note. Please try again.');
+                }
+                return;
             }
 
             const data = await response.json();
@@ -61,11 +71,10 @@ const Dashboard = ({ setIsLoggedIn }) => {
             setTitle('');
             setContent('');
             setTags('');
+            fetchNotes(); // Fetch notes only after successful addition
         } catch (error) {
             console.error('Error adding note:', error);
             alert('An error occurred while adding the note. Please try again later.');
-        } finally {
-            fetchNotes(); // Fetch notes to ensure the list is up to date
         }
     };
 
@@ -77,42 +86,49 @@ const Dashboard = ({ setIsLoggedIn }) => {
         <div className="dashboard-container">
             <h1>Welcome to Your Dashboard</h1>
             <form onSubmit={handleAddNote} className="add-note-form">
-    <h2>Add a Note</h2>
-    <label>
-        Title:
-        <input
-            type="text"
-            value={title}
-            onChange={(e) => setTitle(e.target.value)}
-            required
-        />
-    </label>
-    <label>
-        Content:
-        <textarea
-            value={content}
-            onChange={(e) => setContent(e.target.value)}
-            required
-        />
-    </label>
-    <label>
-        Tags:
-        <input
-            type="text"
-            value={tags}
-            onChange={(e) => setTags(e.target.value)}
-        />
-    </label>
-    <button type="submit" className="add-note-button">Add Note</button>
-</form>
-<div className="dashboard-buttons">
-    <Link to="/notes">
-        <button className="my-notes-button">My Notes</button>
-    </Link>
-    <button className="logout-button" onClick={handleLogout}>
-        Logout
-    </button>
-</div>
+                <h2>Add a Note</h2>
+                <label>
+                    Title:
+                    <input
+                        type="text"
+                        value={title}
+                        onChange={(e) => setTitle(e.target.value)}
+                        required
+                    />
+                </label>
+                <label>
+                    Content:
+                    <textarea
+                        value={content}
+                        onChange={(e) => setContent(e.target.value)}
+                        required
+                    />
+                </label>
+                <label>
+                    Tags:
+                    <input
+                        type="text"
+                        value={tags}
+                        onChange={(e) => setTags(e.target.value)}
+                    />
+                </label>
+                <button type="submit" className="add-note-button">Add Note</button>
+                {errorMessages.length > 0 && (
+                    <div className="error-messages">
+                        {errorMessages.map((msg, index) => (
+                            <p key={index} className="error">{msg}</p>
+                        ))}
+                    </div>
+                )}
+            </form>
+            <div className="dashboard-buttons">
+                <Link to="/notes">
+                    <button className="my-notes-button">My Notes</button>
+                </Link>
+                <button className="logout-button" onClick={handleLogout}>
+                    Logout
+                </button>
+            </div>
             <div className="notes-list">
                 <h2>Your Notes:</h2>
                 {notes.length > 0 ? (

@@ -29,8 +29,8 @@ with app.app_context():
 # Helper function for spell checking
 def check_spelling(text):
     misspelled = spell.unknown(text.split())
-    return {word: spell.candidates(word) for word in misspelled}
-
+    # Convert sets to lists for JSON serialization
+    return {word: list(spell.candidates(word)) for word in misspelled}
 class UserResource(Resource):
     def post(self):
         data = request.get_json()
@@ -127,59 +127,6 @@ class NoteResource(Resource):
         except Exception as e:
             db.session.rollback()
             logging.error(f"Error creating note: {e}", exc_info=True)
-            return {'message': 'Internal Server Error'}, 500
-
-    def put(self, note_id):
-        if 'user_id' not in session:
-            logging.warning("Unauthorized access attempt to update note.")
-            return {'message': 'Unauthorized'}, 401
-
-        note = Note.query.filter_by(id=note_id, user_id=session['user_id']).first()
-        if not note:
-            logging.warning(f"Note not found or access denied for note ID: {note_id}.")
-            return {'message': 'Note not found or access denied'}, 404
-
-        data = request.get_json()
-        if not data or 'title' not in data or 'content' not in data:
-            logging.warning("Title or content missing in request data for note update.")
-            return {'message': 'Title and content are required'}, 400
-        
-        tags = data.get('tags', [])
-        if not isinstance(tags, list):
-            logging.warning("Tags should be a list.")
-            return {'message': 'Tags should be a list.'}, 400
-
-        note.title = data['title']
-        note.content = data['content']
-        note.tags = ','.join(tag.strip() for tag in tags)  # Update tags correctly
-
-        try:
-            db.session.commit()
-            logging.info(f"Note updated successfully: {note_id}")
-            return {'message': 'Note updated successfully!'}, 200
-        except Exception as e:
-            db.session.rollback()
-            logging.error(f"Error updating note: {e}", exc_info=True)
-            return {'message': 'Internal Server Error'}, 500
-
-    def delete(self, note_id):
-        if 'user_id' not in session:
-            logging.warning("Unauthorized access attempt to delete note.")
-            return {'message': 'Unauthorized'}, 401
-
-        note = Note.query.filter_by(id=note_id, user_id=session['user_id']).first()
-        if not note:
-            logging.warning(f"Note not found or access denied for note ID: {note_id}.")
-            return {'message': 'Note not found or access denied'}, 404
-
-        try:
-            db.session.delete(note)
-            db.session.commit()
-            logging.info(f"Note deleted successfully: {note_id}")
-            return {'message': 'Note deleted successfully!'}, 200
-        except Exception as e:
-            db.session.rollback()
-            logging.error(f"Error deleting note: {e}", exc_info=True)
             return {'message': 'Internal Server Error'}, 500
 class ContactResource(Resource):
     def post(self):

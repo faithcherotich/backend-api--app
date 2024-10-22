@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let addButton = document.getElementById("addButton");
     let clearButton = document.getElementById("clearButton");
 
-    let shoppingList = JSON.parse(localStorage.getItem('shoppingList')) || [];
+     let shoppingList = JSON.parse(localStorage.getItem('shoppingList')) || [];
 
     function showList() {
         list.innerHTML = '';
@@ -28,7 +28,10 @@ document.addEventListener("DOMContentLoaded", () => {
             list.append(itemList);
 
             itemText.addEventListener('click', () => {
-                item.purchased = !item.purchased;
+                item.purchased
+
+                
+                 item.purchased;
                 saveAndShow();
             });
 
